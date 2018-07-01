@@ -19,9 +19,10 @@ hbs.registerHelper('screamIt', (text) => {
 //we have ton of others -> view js or pug
 app.set('view engine', 'hbs');
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs');
-});
+//Render template with same page
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs');
+// });
 //using express -> middlewear to host static webpage
 app.use(express.static(__dirname + '/public'));
 
